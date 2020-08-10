@@ -15,11 +15,11 @@
 	
   	Se tudo estiver correto vai aparecer a seguinte mensagem:
 	
-	```
-		PHP 7.4.2 (cli) (built: Jan 21 2020 17:52:43) ( ZTS Visual C++ 2017 x64 )
-		Copyright (c) The PHP Group
-		Zend Engine v3.4.0, Copyright (c) Zend Technologies
-	```
+		```
+			PHP 7.4.2 (cli) (built: Jan 21 2020 17:52:43) ( ZTS Visual C++ 2017 x64 )
+			Copyright (c) The PHP Group
+			Zend Engine v3.4.0, Copyright (c) Zend Technologies
+		```
 
 3. **Instalar o composer**
 
@@ -74,7 +74,7 @@
 
 9. **Após a criação do banco de dados e a alteração do .env com as informações de conexão, vamos criar as tabelas através do comando abaixo:**
 	
-  	'php artisan migrate'
+  	`php artisan migrate`
   
 10. **Criando a parte de login da aplicação**
 
@@ -116,11 +116,13 @@
 	
 	2. Para cada controller que necessite a verificação de confoirmação do email é necessário ea alteração abaixo:
 	
-  		'public function __construct()
+  		```
+		public function __construct()
 		{
 			$this->middleware('auth');
 			$this->middleware('verified');        
-		}'
+		}
+		```
 
 
 12. **Autenticação com o Google**
@@ -132,12 +134,14 @@
 
   	* Alterar o arquivo '2014_10_12_000000_create_users_table.php' de acordo com as informações abaixo:
 	
-  		'$table->string('google_id')->nullable();
-    	$table->string('google_avatar')->nullable();'
+  		```
+		$table->string('google_id')->nullable();
+    	$table->string('google_avatar')->nullable();
+		```
 
 	* Serão incluidos na tabela user os dois campos informados acima. Após a alteração do arquivo executar o comando abaixo para atualizar a tabela users
 	
-		'php artisan migrate:fresh'
+		`php artisan migrate:fresh`
 		
 	* Após a alteração da tabela seguir os passos
 	
