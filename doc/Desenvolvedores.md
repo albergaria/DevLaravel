@@ -63,13 +63,14 @@
 
 8. Altere o arquivo .env com o nome do BD. No meu caso será criado o BD bdCoretec
 
-
-  ' DB_CONNECTION=mysql  
+    ```
+	DB_CONNECTION=mysql  
 	DB_HOST=127.0.0.1  
 	DB_PORT=3306  
 	DB_DATABASE=bdCoretec  
 	DB_USERNAME=root  
-	DB_PASSWORD='  
+	DB_PASSWORD=
+	```  
 
 9. **Após a criação do banco de dados e a alteração do .env com as informações de conexão, vamos criar as tabelas através do comando abaixo:**
 	
