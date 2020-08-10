@@ -2,7 +2,7 @@
 
 ### Passo a passo para utilizar o Laravel
 
-	[https://laravel.com/docs/7.x/installation](https://laravel.com/docs/7.x/installation)
+[https://laravel.com/docs/7.x/installation](https://laravel.com/docs/7.x/installation)
 
 1. **Instalar o Xampp**
 
