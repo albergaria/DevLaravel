@@ -82,13 +82,13 @@
 	
 	Executar os comandos abaixo:
         
-		```
-        composer require laravel/ui   
-		php artisan ui bootstrap --auth   
-		npm install   
-		npm run dev   
-		php artisan migrate:fresh
-        ```
+	```
+	composer require laravel/ui   
+	php artisan ui bootstrap --auth   
+	npm install   
+	npm run dev   
+	php artisan migrate:fresh
+	```
 		
 11. **Para que possa ser enviado email através da aplicação, o .env deverá ser alterado da seguinte forma:**
 
@@ -103,7 +103,7 @@
 	MAIL_FROM_NAME="${APP_NAME}"
     ```
 
-11. **Alterar as configurações para solicitar a confirmação do email após o cadastro**
+12. **Alterar as configurações para solicitar a confirmação do email após o cadastro**
 
     [https://laravel.com/docs/7.x/verification](https://laravel.com/docs/7.x/verification)
 
@@ -125,7 +125,7 @@
 		```
 
 
-12. **Autenticação com o Google**
+13. **Autenticação com o Google**
 
 	[https://appdividend.com/2018/04/11/laravel-google-login-tutorial/](https://appdividend.com/2018/04/11/laravel-google-login-tutorial/)  
 	[https://console.developers.google.com/](https://console.developers.google.com/)
@@ -239,7 +239,7 @@
 
 	* Agora só testar
 	
-13. **Autenticação com o Facebook**
+14. **Autenticação com o Facebook**
 		[https://appdividend.com/2017/07/12/laravel-facebook-login/](https://appdividend.com/2017/07/12/laravel-facebook-login/)
   		[https://developers.facebook.com/apps/](https://developers.facebook.com/apps/)
 	
@@ -352,13 +352,13 @@
 
 	* Agora só testar
 
-14. Adicionando um projeto existente a um repositorio GitHub existente 
+15. Adicionando um projeto existente a um repositorio GitHub existente 
 	[https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line](https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
 	
-15. Publicando a aplicação no Google App Engine
+16. Publicando a aplicação no Google App Engine
 	  [https://medium.com/hackernoon/how-to-deploy-a-laravel-web-app-on-google-app-engine-ecfbb0d49b00](https://medium.com/hackernoon/how-to-deploy-a-laravel-web-app-on-google-app-engine-ecfbb0d49b00)
 	
-16. Configurando o MySQL no Google Cloud
+17. Configurando o MySQL no Google Cloud
 	
   '
 	Instance name: sqlcoretec
@@ -370,7 +370,7 @@
   [https://www.youtube.com/watch?v=QhQ1PrYH3q0](https://www.youtube.com/watch?v=QhQ1PrYH3q0)
 	
 	
-17. FAQ
+18. FAQ
 
   1. ### ERRO 1
   Error Unable to prepare route [api/user] for serialization. Uses Closure.
