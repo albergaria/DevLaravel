@@ -22,5 +22,5 @@ Professores e alunos da [Universidade Federal de Catalão - UFCat](http://catala
 
 ### Manuais
 
-* [Para usuários](https://github.com/albergaria/coretectools/blob/master/doc/usuarios.md)
-* [Para desenvolvedores](https://github.com/albergaria/coretectools/blob/master/doc/developer.md)
+* [Para usuários](/doc/usuarios.md)
+* [Para desenvolvedores](/doc/developer.md)
