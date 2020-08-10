@@ -11,9 +11,7 @@
 2. **Após a instalação, verificar se o PHP foi instalado corretamente.**
 	Abra uma janela de comando e digite o seguinte comando:
 
-		`
-		php -v
-		`
+		` php -v `
 	
   	Se tudo estiver correto vai aparecer a seguinte mensagem:
 	
@@ -51,7 +49,7 @@
 5. **Instalar o laravel**
 	
 	Para criar um projeto novo utilizando o laravel, abra uma janela de comando e vá para a pasta onde o projeto será criado.
-		No meu caso c:\laragon\wwww e digite o seguinte comando:
+		No meu caso `c:\laragon\wwww` e digite o seguinte comando:
 		
 	'composer create-project --prefer-dist laravel/laravel coretectools'
 	
