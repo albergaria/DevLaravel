@@ -1,7 +1,8 @@
-# DevLaravel
- Desenvolvimento com o Laravel, PHP, MySQL, etc...
+# Desenvolvendo com o Laravel
+ Aqui você vai encontrar informações básicas de um iniciante no mundo do Laravel, PHP, MySQL, e outras dicas que achar interessante ao longo deste aprendizado.  
+ Sinta-se a vontade para deixar suas dúvidas, criticas e sugestões.
 
-<p align="center"><img src="https://github.com/albergaria/coretectools/blob/master/public/images/icon/CoretecToolsHTransp.png"></p>
+<p align="center"><img src="/images/laravel.png"> <img src="/images/php.jpg">  <img src="/images/mysql.jpg"></p>
 
 ## CoretecTools
 
