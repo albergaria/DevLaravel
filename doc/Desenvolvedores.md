@@ -444,3 +444,23 @@ Pwd: laravel@2020ufcat
 Nome da conexao da instancia: coretectools-285601:us-central1:mysql-inst
 BD: bdcoretectools
 
+cloud_sql_proxy -instances=coretectools-285601:us-central1:mysql-inst=tcp:3306
+
+
+
+Erro
+Step #1: In Connection.php line 664:
+Step #1:                                                                                
+Step #1:   SQLSTATE[HY000] [2002] No such file or directory (SQL: delete from `cache`)  
+
+Solução:
+https://stackoverflow.com/questions/49127983/laravel-project-gcloud-app-deploy-failed
+
+
+Troca do Icone da pagina
+https://www.it-swarm.dev/pt/laravel/como-ligar-o-icone-favicon-em-laravel/1050235952/
+
+
+
+<div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
+
