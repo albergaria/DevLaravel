@@ -2,7 +2,7 @@
  Aqui você vai encontrar informações básicas de um iniciante no mundo do Laravel, PHP, MySQL, e outras dicas que achar interessante ao longo deste aprendizado.  
  Sinta-se a vontade para deixar suas dúvidas, criticas e sugestões.
 
-<p align="center"><img src="/images/laravel.png" width="200" height="125"> <img src="/images/php.jpg" width="200" height="125">  <img src="/images/mysql.jpg" width="200" height="125"></p>
+<p align="center"><img src="/images/laravel.png" width="100" height="65"> <img src="/images/php.jpg" width="100" height="65">  <img src="/images/mysql.jpg" width="100" height="65"></p>
 
 ## CoretecTools
 
