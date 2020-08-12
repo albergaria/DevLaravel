@@ -7,7 +7,7 @@
 ### Contato
 
 * Email: [walter.albergaria@gmail.com](mailto:walter.albergaria@gmail.com)
-* Web-page: [Github Albergaria](https://github.com/albergaria/DevLaravel)
+* Github: [https://github.com/albergaria/DevLaravel](https://github.com/albergaria/DevLaravel)
 
 
 ### Manuais

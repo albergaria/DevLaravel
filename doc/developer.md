@@ -1,6 +1,6 @@
 # Documentação Desenvolvedores
 
-Está página é destinada aos desenvolvedores que prentendem contribuir com a plataforma CoretecTools. Abaixo o desenvolvedor poderá consultar a estrutura e modulação do software como também suas bibliotecas internas.
+Está página é destinada aos desenvolvedores que prentendem contribuir com o desenvolvimento. Abaixo o desenvolvedor poderá consultar a estrutura e modulação do software como também suas bibliotecas internas.
 
 * [Desenvolvimento](Desenvolvedores.md)
 * [Implantação](deploy.md)
