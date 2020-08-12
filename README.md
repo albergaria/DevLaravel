@@ -7,10 +7,9 @@
 ### Contato
 
 * Email: [walter.albergaria@gmail.com](mailto:walter.albergaria@gmail.com)
-* Web-page: [www.coretectools.com.br](www.coretectools.com.br)
+* Web-page: [Github Albergaria](https://github.com/albergaria/DevLaravel)
 
 
 ### Manuais
 
-* [Para usuários](/doc/usuarios.md)
 * [Para desenvolvedores](/doc/developer.md)
