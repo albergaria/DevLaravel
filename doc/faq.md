@@ -1,9 +1,7 @@
 
 # FAQ
 
-  ### ERRO 1  
-
-  **Error Unable to prepare route [api/user] for serialization. Uses Closure.**
+  ### ERRO 1: **Error Unable to prepare route [api/user] for serialization. Uses Closure.**
 
   1. **Solução 1:**  
 
@@ -22,9 +20,7 @@
   [https://stackoverflow.com/questions/45266254/laravel-unable-to-prepare-route-for-serialization-uses-closure](https://stackoverflow.com/questions/45266254/laravel-unable-to-prepare-route-for-serialization-uses-closure)
 
 
-  ### ERRO 2  
-
-  **Após executar o comando `gcloud app deploy` no google cloud terminal, apresenta o seguinte erro:**  
+  ### ERRO 2: **Após executar o comando `gcloud app deploy` no google cloud terminal, apresenta o seguinte erro:**  
 
   ```
   {\"ResourceType\":\"compute.beta.regionAutoscaler\",
