@@ -12,7 +12,9 @@
 
 ### Os tópicos foram divididos da seguinte maneira:
 
-* [Desenvolvimento](Desenvolvedores.md)
-* [Erros](faq.md)
-* [Implantação](deploy.md)
-* [Implementação de módulos](modules.md)
+* [Desenvolvimento](\doc\Desenvolvedores.md)
+* [Erros](\doc\faq.md)
+* [Implantação](\doc\deploy.md)
+* [Implementação de módulos](\doc\modules.md)  
+
+*Estamos sempre em atualização*

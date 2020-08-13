@@ -26,7 +26,7 @@
 
 	[https://getcomposer.org/download/](https://getcomposer.org/download/)
 	
-4. **Após a instalação, verificar se o Compoer foi instalado corretamente.**
+4. **Após a instalação, verificar se o Composer foi instalado corretamente.**
 
 	Abra uma janela de comando e digite o seguinte comando:
 
