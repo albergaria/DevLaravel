@@ -383,12 +383,12 @@
 	
 17. Configurando o MySQL no Google Cloud
 	
-  '
+	```
 	Instance name: sqlcoretec
 	Instance pwd: crtls@2020
 	Instance connection name: coretectools-283503:us-east1:sqlcoretec
 	Region: US-east1 (south carolina)
-	'
+	```
 
   [https://www.youtube.com/watch?v=QhQ1PrYH3q0](https://www.youtube.com/watch?v=QhQ1PrYH3q0)
 	
