@@ -19,7 +19,8 @@
 	```
 	PHP 7.4.2 (cli) (built: Jan 21 2020 17:52:43) ( ZTS Visual C++ 2017 x64 )
 	Copyright (c) The PHP Group
-	Zend Engine v3.4.0, Copyright (c) Zend Technologies```
+	Zend Engine v3.4.0, Copyright (c) Zend Technologies
+	```
 
 3. **Instalar o composer**
 
@@ -49,22 +50,23 @@
 
 5. **Instalar o laravel**
 	
-	Para criar um projeto novo utilizando o laravel, abra uma janela de comando e vá para a pasta onde o projeto será criado.
+	Para criar um projeto novo utilizando o laravel, abra uma janela de comando e vá para a pasta onde o projeto será criado.  
 	No meu caso `c:\laragon\wwww` e digite o seguinte comando:
 		
-	'composer create-project --prefer-dist laravel/laravel nome_projeto'  
+	`composer create-project --prefer-dist laravel/laravel nome_projeto`  
 
 	onde *nome-projeto* é o nome do projeto a ser criado.
 	
-6. **Após a criação do projeto vá para a pasta criada.**
+6. **Após a criação do projeto vá para a pasta criada.**  
 	No meu caso *c:\laragon\www\nome_projeto*
 
-7. **Crie o banco de dados a ser utilizado.** 
+7. **Crie o banco de dados a ser utilizado.**   
 	No meu caso será criado o seguinte BD:
 	
-  	'bdCoretec'
+  	`bdCoretec`
 
-8. Altere o arquivo .env com o nome do BD. No meu caso será criado o BD bdCoretec
+8. **Altere o arquivo .env com o nome do BD.**  
+	No meu caso será criado o BD *bdCoretec*
 
     ```
 	DB_CONNECTION=mysql  
@@ -77,7 +79,7 @@
 
 9. **Após a criação do banco de dados e a alteração do .env com as informações de conexão, vamos criar as tabelas através do comando abaixo:**
 	
-`php artisan migrate`
+	`php artisan migrate`
   
 10. **Criando a parte de login da aplicação**
 
@@ -99,10 +101,10 @@
     MAIL_MAILER=smtp   
 	MAIL_HOST=smtp.gmail.com   
 	MAIL_PORT=587   
-	MAIL_USERNAME=coretectools@gmail.com   
-	MAIL_PASSWORD=xatgpkgpytcibuyj   
+	MAIL_USERNAME=xcxcxcxc@gmail.com   
+	MAIL_PASSWORD=xcxcxcxcxcxc   
 	MAIL_ENCRYPTION=tls   
-	MAIL_FROM_ADDRESS=coretectools@gmail.com   
+	MAIL_FROM_ADDRESS=xcxcxcxc@gmail.com   
 	MAIL_FROM_NAME="${APP_NAME}"
     ```
 
@@ -114,10 +116,11 @@
 	Para que a verificação de email seja feita com sucesso é necessário fazer as seguintes alterações:
 	
 
-  	1. Arquivos routes/web.php
-		Auth::routes(['verify' => true]);
+  	* Arquivos **routes/web.php**
+
+		`Auth::routes(['verify' => true]);`
 	
-	2. Para cada controller que necessite a verificação de confoirmação do email é necessário ea alteração abaixo:
+	* Para cada controller que necessite a verificação de confirmação do email é necessário ea alteração abaixo:
 	
   		```
 		public function __construct()
@@ -131,7 +134,7 @@
 13. **Autenticação com o Google**
 
 	[https://appdividend.com/2018/04/11/laravel-google-login-tutorial/](https://appdividend.com/2018/04/11/laravel-google-login-tutorial/)  
-	[https://console.developers.google.com/](https://console.developers.google.com/)
+	[https://console.developers.google.com/](https://console.developers.google.com/)  
 	[https://medium.com/employbl/add-login-with-google-to-your-laravel-app-d2205f01b895](https://medium.com/employbl/add-login-with-google-to-your-laravel-app-d2205f01b895)
 	
 
@@ -148,39 +151,45 @@
 		
 	* Após a alteração da tabela seguir os passos
 	
-	  	'composer require laravel/socialite'
+	  	`composer require laravel/socialite`
 	
 	* Localize os providers no arquivo 'config >> app.php' file e inclua o SocialiteServiceProvider.
 
-  		''providers' => [
-				// ...
-				Laravel\Socialite\SocialiteServiceProvider::class,
-			]'
+  		```
+		'providers' => [
+			// ...
+			Laravel\Socialite\SocialiteServiceProvider::class,
+		]
+		```
 
 	* Localize os aliases no arquivo config >> app.php file e inclua os aliases abaixo.
 
-  		''aliases' => [
-				// ...
-				'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-			]'
+  		```
+		'aliases' => [
+			// ...
+			'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+		]
+		```
 
 	* Vá para o portal de desenvolvedor do Google [https://console.developers.google.com](https://console.developers.google.com) e crie o token para sua aplicação
 	
-	* Altere o arquivo 'config >> services.php' e inclua as seguintes linhas: 
+	* Altere o arquivo `config >> services.php` e inclua as seguintes linhas: 
 	
-    	''google' => [
+    	```
+		'google' => [
         'client_id' =>  env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
         'redirect' => env('GOOGLE_CALLBACK_URL'),
-		  ],'
+		  ],
+		```
     	
 	* Crie o controller para o Google
 	
-		'php artisan make:controller SocialAuthGoogleController'
+		`php artisan make:controller SocialAuthGoogleController`
 	
 	* Altere o controler para o codigo abaixo:
 	
-    	'
+    	```
 		<?php
 
 		namespace App\Http\Controllers;
@@ -227,72 +236,82 @@
 					return 'Erro de Autenticação no Google';
 				}
 			}
-		}'
+		}
+		```
   	
-	* Inclua as seguintes rotas no arquivo 'ROUTES >> web.php'
+	* Inclua as seguintes rotas no arquivo `ROUTES >> web.php`
 	
-    	'Route::get('/redirect_google', 'SocialAuthGoogleController@redirect_google');
-		Route::get('/callback_google', 'SocialAuthGoogleController@callback_google');'
+    	```
+		Route::get('/redirect_google', 'SocialAuthGoogleController@redirect_google');
+		Route::get('/callback_google', 'SocialAuthGoogleController@callback_google');
+		```
 
-	* Na view 'login.blade.php' inclua o link para login com o Google
+	* Na view `login.blade.php` inclua o link para login com o Google
 	
-    	'
-		<a href="{{ url('/redirect_google') }}" type="button" class="btn btn-block btn-outline-danger"><i class="fab fa-google"></i> {{ __('Login with Google') }}</a>
-		'
+    	```
+		<a href="{{ url('/redirect_google') }}" type="button" class="btn btn-block btn-outline-danger">   
+		<i class="fab fa-google"></i> {{ __('Login with Google') }}</a>
+		```
 
 	* Agora só testar
 	
-14. **Autenticação com o Facebook**
-		[https://appdividend.com/2017/07/12/laravel-facebook-login/](https://appdividend.com/2017/07/12/laravel-facebook-login/)
-  		[https://developers.facebook.com/apps/](https://developers.facebook.com/apps/)
+14. **Autenticação com o Facebook**  
+	[https://appdividend.com/2017/07/12/laravel-facebook-login/](https://appdividend.com/2017/07/12/laravel-facebook-login/)  
+	[https://developers.facebook.com/apps/](https://developers.facebook.com/apps/)
 	
 
-	* Alterar o arquivo '2014_10_12_000000_create_users_table.php' de acordo com as informações abaixo:
+	* Alterar o arquivo `2014_10_12_000000_create_users_table.php` de acordo com as informações abaixo:
 	
-    	'$table->string('facebook_id')->nullable();
-    	$table->string('facebook_avatar')->nullable();'
+    	```
+		$table->string('facebook_id')->nullable();
+    	$table->string('facebook_avatar')->nullable();
+		```
 	
-	* Serão incluidos na tabela user os dois campos informados acima. Após a alteração do arquivo executar o comando abaixo para atualizar a tabela users
+	* Serão incluidos na tabela user os dois campos informados acima. Após a alteração do arquivo executar o comando abaixo para atualizar a tabela `users`
 	
-		'php artisan migrate:fresh'
+	`php artisan migrate:fresh`
 		
 	* Após a alteração da tabela seguir os passos
 	
-	  'composer require laravel/socialite'
+	`composer require laravel/socialite`  
 	
 	* Localize os providers no arquivo config >> app.php file e inclua o SocialiteServiceProvider.
 
-  		''providers' => [
-				// ...
-				Laravel\Socialite\SocialiteServiceProvider::class,
-			]'
+  		```
+		'providers' => [
+			// ...
+			Laravel\Socialite\SocialiteServiceProvider::class,
+		]
+		```
 
-	* Localize os aliases no arquivo 'config >> app.php' file e inclua os aliases abaixo.
+	* Localize os aliases no arquivo `config >> app.php` file e inclua os aliases abaixo.
 
-  		''aliases' => [
-				// ...
-				'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-			]'
+  		```
+		'aliases' => [
+			// ...
+			'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+		]
+		```
 
 	* Vá para o portal de desenvolvedor do Facebook [https://developers.facebook.com/](https://developers.facebook.com/) e crie o token para sua aplicação
 	
-	* Altere o arquivo 'config >> services.php' e inclua as seguintes linhas: 
+	* Altere o arquivo `config >> services.php` e inclua as seguintes linhas: 
 	
-  '
+	```
     'facebook' => [
       'client_id' =>  env('GOOGLE_CLIENT_ID'),
       'client_secret' => env('GOOGLE_CLIENT_SECRET'),
       'redirect' => env('GOOGLE_CALLBACK_URL'),
     ],
-  '
+	```
 	
 	* Crie o controller para o Google
 	
-		'php artisan make:controller SocialAuthFacebookController'
+	`php artisan make:controller SocialAuthFacebookController`
 	
 	* Altere o controler para o codigo abaixo:
 	
-  '
+	```
 	<?php
 
 	namespace App\Http\Controllers;
@@ -338,20 +357,21 @@
 			}
 		}
 	}
-	'
+	```
 
-	* Inclua as seguintes rotas no arquivo 'ROUTES >> web.php'
+	* Inclua as seguintes rotas no arquivo `ROUTES >> web.php`
 
-  '	
-		Route::get('/redirect_google', 'SocialAuthGoogleController@redirect_google');
-		Route::get('/callback_google', 'SocialAuthGoogleController@callback_google');
-  '
+	```
+	Route::get('/redirect_google', 'SocialAuthGoogleController@redirect_google');
+	Route::get('/callback_google', 'SocialAuthGoogleController@callback_google');
+	```
 
-	Na view 'login.blade.php' inclua o link para login com o Google
+	Na view `login.blade.php` inclua o link para login com o Google
 	
-  '
-	<a href="{{ url('/redirect_facebook') }}" type="button" class="btn btn-block btn-outline-primary"><i class="fab fa-facebook"></i> {{ __('Login with Facebook') }}</a>
-  '
+	```
+	<a href="{{ url('/redirect_facebook') }}" type="button" class="btn btn-block btn-outline-primary">
+	<i class="fab fa-facebook"></i> {{ __('Login with Facebook') }}</a>
+	```
 
 	* Agora só testar
 
