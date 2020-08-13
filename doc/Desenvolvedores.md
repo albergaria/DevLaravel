@@ -55,8 +55,24 @@
 		
 	`composer create-project --prefer-dist laravel/laravel nome_projeto`  
 
-	onde *nome-projeto* é o nome do projeto a ser criado.
-	
+	onde *nome-projeto* é o nome do projeto a ser criado. Após a criação do projeto serão criadas pelo Laravel as pastas abaixo:
+
+	```
+	.
+	├──app
+	├──bootstrap
+	├──config
+	├──database
+	├──doc
+	├──node_modules
+	├──public
+	├──resources
+	├──routes
+	├──storage
+	├──tests
+	└──vendor
+	```
+
 6. **Após a criação do projeto vá para a pasta criada.**  
 	No meu caso *c:\laragon\www\nome_projeto*
 

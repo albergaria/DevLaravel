@@ -10,6 +10,9 @@
 * Github: [https://github.com/albergaria/DevLaravel](https://github.com/albergaria/DevLaravel)
 
 
-### Manuais
+### Os tópicos foram divididos da seguinte maneira:
 
-* [Para desenvolvedores](/doc/developer.md)
+* [Desenvolvimento](Desenvolvedores.md)
+* [Erros](faq.md)
+* [Implantação](deploy.md)
+* [Implementação de módulos](modules.md)
