@@ -61,9 +61,7 @@
 	No meu caso *c:\laragon\www\nome_projeto*
 
 7. **Crie o banco de dados a ser utilizado.**   
-	No meu caso será criado o seguinte BD:
-	
-  	`bdCoretec`
+	No meu caso será criado o seguinte BD: `bdCoretec`
 
 8. **Altere o arquivo .env com o nome do BD.**  
 	No meu caso será criado o BD *bdCoretec*
@@ -134,7 +132,6 @@
 13. **Autenticação com o Google**
 
 	[https://appdividend.com/2018/04/11/laravel-google-login-tutorial/](https://appdividend.com/2018/04/11/laravel-google-login-tutorial/)  
-	[https://console.developers.google.com/](https://console.developers.google.com/)  
 	[https://medium.com/employbl/add-login-with-google-to-your-laravel-app-d2205f01b895](https://medium.com/employbl/add-login-with-google-to-your-laravel-app-d2205f01b895)
 	
 
@@ -257,8 +254,7 @@
 	
 14. **Autenticação com o Facebook**  
 	[https://appdividend.com/2017/07/12/laravel-facebook-login/](https://appdividend.com/2017/07/12/laravel-facebook-login/)  
-	[https://developers.facebook.com/apps/](https://developers.facebook.com/apps/)
-	
+
 
 	* Alterar o arquivo `2014_10_12_000000_create_users_table.php` de acordo com as informações abaixo:
 	
@@ -269,13 +265,13 @@
 	
 	* Serão incluidos na tabela user os dois campos informados acima. Após a alteração do arquivo executar o comando abaixo para atualizar a tabela `users`
 	
-	`php artisan migrate:fresh`
+		`php artisan migrate:fresh`
 		
 	* Após a alteração da tabela seguir os passos
 	
-	`composer require laravel/socialite`  
+		`composer require laravel/socialite`  
 	
-	* Localize os providers no arquivo config >> app.php file e inclua o SocialiteServiceProvider.
+	* Localize os *providers* no arquivo `config >> app.php` e inclua o código abaixo:
 
   		```
 		'providers' => [
@@ -297,74 +293,74 @@
 	
 	* Altere o arquivo `config >> services.php` e inclua as seguintes linhas: 
 	
-	```
-    'facebook' => [
-      'client_id' =>  env('GOOGLE_CLIENT_ID'),
-      'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-      'redirect' => env('GOOGLE_CALLBACK_URL'),
-    ],
-	```
+		```
+		'facebook' => [
+		'client_id' =>  env('GOOGLE_CLIENT_ID'),
+		'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+		'redirect' => env('GOOGLE_CALLBACK_URL'),
+		],
+		```
 	
-	* Crie o controller para o Google
+	* Crie o controller para o **Google**
 	
-	`php artisan make:controller SocialAuthFacebookController`
+		`php artisan make:controller SocialAuthFacebookController`
 	
-	* Altere o controler para o codigo abaixo:
+	* Altere o controler para o codigo abaixo:  
 	
-	```
-	<?php
+		```
+		<?php
 
-	namespace App\Http\Controllers;
+		namespace App\Http\Controllers;
 
-	use Illuminate\Http\Request;
-	use App\User;
-	use Socialite;
-	use Auth;
-	use Exception;
+		use Illuminate\Http\Request;
+		use App\User;
+		use Socialite;
+		use Auth;
+		use Exception;
 
-	class SocialAuthFacebookController extends Controller
-	{
-
-		public function redirect_facebook()
+		class SocialAuthFacebookController extends Controller
 		{
-			return Socialite::driver('facebook')->redirect();
-		}
 
-		public function callback_facebook()
-		{
-			try {
-				
-				$facebookUser = Socialite::driver('facebook')->user();
-				$existUser = User::where('email',$facebookUser->email)->first();
+			public function redirect_facebook()
+			{
+				return Socialite::driver('facebook')->redirect();
+			}
 
-				if($existUser) {
-					Auth::loginUsingId($existUser->id);
+			public function callback_facebook()
+			{
+				try {
+					
+					$facebookUser = Socialite::driver('facebook')->user();
+					$existUser = User::where('email',$facebookUser->email)->first();
+
+					if($existUser) {
+						Auth::loginUsingId($existUser->id);
+					}
+					else {
+						$user = new User;
+						$user->name = $facebookUser->name;
+						$user->email = $facebookUser->email;
+						$user->facebook_id = $facebookUser->id;
+						$user->facebook_avatar = $facebookUser->avatar;
+						$user->password = md5(rand(1,10000));
+						$user->save();
+						Auth::loginUsingId($user->id);
+					}
+					return redirect()->to('/home');
+				} 
+				catch (Exception $e) {
+					return 'Erro de Autenticação no Facebook';
 				}
-				else {
-					$user = new User;
-					$user->name = $facebookUser->name;
-					$user->email = $facebookUser->email;
-					$user->facebook_id = $facebookUser->id;
-					$user->facebook_avatar = $facebookUser->avatar;
-					$user->password = md5(rand(1,10000));
-					$user->save();
-					Auth::loginUsingId($user->id);
-				}
-				return redirect()->to('/home');
-			} 
-			catch (Exception $e) {
-				return 'Erro de Autenticação no Facebook';
 			}
 		}
-	}
-	```
+		```
 
-	* Inclua as seguintes rotas no arquivo `ROUTES >> web.php`
+	* Inclua as seguintes rotas no arquivo `ROUTES >> web.php`  
 
-	```
-	Route::get('/redirect_google', 'SocialAuthGoogleController@redirect_google');
-	Route::get('/callback_google', 'SocialAuthGoogleController@callback_google');
-	```
+		```
+		Route::get('/redirect_google', 'SocialAuthGoogleController@redirect_google');
+		Route::get('/callback_google', 'SocialAuthGoogleController@callback_google');
+		```
 
 	Na view `login.blade.php` inclua o link para login com o Google
 	
@@ -375,10 +371,10 @@
 
 	* Agora só testar
 
-15. Adicionando um projeto existente a um repositorio GitHub existente 
+15. Adicionando um projeto existente a um repositorio GitHub existente  
 	[https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line](https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
 	
-16. Publicando a aplicação no Google App Engine
+16. Publicando a aplicação no Google App Engine  
 	  [https://medium.com/hackernoon/how-to-deploy-a-laravel-web-app-on-google-app-engine-ecfbb0d49b00](https://medium.com/hackernoon/how-to-deploy-a-laravel-web-app-on-google-app-engine-ecfbb0d49b00)
 	
 17. Configurando o MySQL no Google Cloud
@@ -390,7 +386,7 @@
 	Region: US-east1 (south carolina)
 	```
 
-  [https://www.youtube.com/watch?v=QhQ1PrYH3q0](https://www.youtube.com/watch?v=QhQ1PrYH3q0)
+  	[https://www.youtube.com/watch?v=QhQ1PrYH3q0](https://www.youtube.com/watch?v=QhQ1PrYH3q0)
 	
 	
 18. FAQ
