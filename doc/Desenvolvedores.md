@@ -12,13 +12,14 @@
 2. **Após a instalação, verificar se o PHP foi instalado corretamente.**
 	Abra uma janela de comando e digite o seguinte comando:
 
-		`php -v`  
+	`php -v`  
 	
   	Se tudo estiver correto vai aparecer a seguinte mensagem:
 	
-		```PHP 7.4.2 (cli) (built: Jan 21 2020 17:52:43) ( ZTS Visual C++ 2017 x64 )
-		Copyright (c) The PHP Group
-		Zend Engine v3.4.0, Copyright (c) Zend Technologies```
+	```
+	PHP 7.4.2 (cli) (built: Jan 21 2020 17:52:43) ( ZTS Visual C++ 2017 x64 )
+	Copyright (c) The PHP Group
+	Zend Engine v3.4.0, Copyright (c) Zend Technologies```
 
 3. **Instalar o composer**
 
@@ -32,7 +33,8 @@
 
 	Se tudo estiver correto vai aparecer a seguinte mensagem:
 
-```	 ______  
+	```
+	 ______  
 	/ ____/___  ____ ___  ____  ____  ________  _____  
 	/ /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/  
 	/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /  
@@ -43,17 +45,19 @@
 
 	Usage:
 		command [options] [arguments]
-```
+	```
 
 5. **Instalar o laravel**
 	
 	Para criar um projeto novo utilizando o laravel, abra uma janela de comando e vá para a pasta onde o projeto será criado.
-		No meu caso `c:\laragon\wwww` e digite o seguinte comando:
+	No meu caso `c:\laragon\wwww` e digite o seguinte comando:
 		
-	'composer create-project --prefer-dist laravel/laravel coretectools'
+	'composer create-project --prefer-dist laravel/laravel nome_projeto'  
+
+	onde *nome-projeto* é o nome do projeto a ser criado.
 	
 6. **Após a criação do projeto vá para a pasta criada.**
-	No meu caso *c:\laragon\www\coretectools-v0*
+	No meu caso *c:\laragon\www\nome_projeto*
 
 7. **Crie o banco de dados a ser utilizado.** 
 	No meu caso será criado o seguinte BD:
@@ -73,7 +77,7 @@
 
 9. **Após a criação do banco de dados e a alteração do .env com as informações de conexão, vamos criar as tabelas através do comando abaixo:**
 	
-  	`php artisan migrate`
+`php artisan migrate`
   
 10. **Criando a parte de login da aplicação**
 
