@@ -19,7 +19,7 @@
 
   2. **Solução 2**  
 
-  [Criação de um controler para a closure](https://stackoverflow.com/questions/45266254/laravel-unable-to-prepare-route-for-serialization-uses-closure)
+    [Criação de um controler para a closure](https://stackoverflow.com/questions/45266254/laravel-unable-to-prepare-route-for-serialization-uses-closure)
 
 
   ### ERRO 2  
