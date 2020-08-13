@@ -2,7 +2,8 @@
 
 ### Passo a passo para utilização do Laravel
 
-[https://laravel.com/docs/7.x/installation](https://laravel.com/docs/7.x/installation)
+[https://laravel.com/docs/7.x/installation](https://laravel.com/docs/7.x/installation)  
+
 
 1. **Instalar o Xampp**
 
@@ -11,15 +12,13 @@
 2. **Após a instalação, verificar se o PHP foi instalado corretamente.**
 	Abra uma janela de comando e digite o seguinte comando:
 
-		` php -v `  
+		`php -v`  
 	
   	Se tudo estiver correto vai aparecer a seguinte mensagem:
 	
-		```
-		PHP 7.4.2 (cli) (built: Jan 21 2020 17:52:43) ( ZTS Visual C++ 2017 x64 )
+		```PHP 7.4.2 (cli) (built: Jan 21 2020 17:52:43) ( ZTS Visual C++ 2017 x64 )
 		Copyright (c) The PHP Group
-		Zend Engine v3.4.0, Copyright (c) Zend Technologies
-		```
+		Zend Engine v3.4.0, Copyright (c) Zend Technologies```
 
 3. **Instalar o composer**
 
@@ -29,7 +28,7 @@
 
 	Abra uma janela de comando e digite o seguinte comando:
 
-	'composer -v'
+	`composer -v`
 
 	Se tudo estiver correto vai aparecer a seguinte mensagem:
 
