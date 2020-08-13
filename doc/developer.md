@@ -3,6 +3,7 @@
 Está página é destinada aos desenvolvedores que prentendem contribuir com o desenvolvimento. Abaixo o desenvolvedor poderá consultar a estrutura e modulação do software como também suas bibliotecas internas.
 
 * [Desenvolvimento](Desenvolvedores.md)
+* [Erros](faq.md)
 * [Implantação](deploy.md)
 * [Implementação de módulos](modules.md)
 
