@@ -19,7 +19,7 @@
 
   2. **Solução 2**  
 
-    [https://stackoverflow.com/questions/45266254/laravel-unable-to-prepare-route-for-serialization-uses-closure](https://stackoverflow.com/questions/45266254/laravel-unable-to-prepare-route-for-serialization-uses-closure)  
+    [Criação de um controler para a closure](https://stackoverflow.com/questions/45266254/laravel-unable-to-prepare-route-for-serialization-uses-closure)  
 
 
   ### ERRO 2  
@@ -37,13 +37,14 @@
       \"httpMethod\":\"POST\"}	
   ```
 
-    1. **Solução 1:**  
+  1. **Solução 1:**  
 
-      Altere o arquivo `app.yaml` e adicione o código abaixo:
+    Altere o arquivo `app.yaml` e adicione o código abaixo:
 
-        ```
-        automatic_scaling:
-            min_num_instances: 1
-            max_num_instances: 7 
-        ```
+      ```
+      automatic_scaling:
+          min_num_instances: 1
+          max_num_instances: 7 
+      ```
+      
       
