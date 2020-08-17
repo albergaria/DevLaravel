@@ -10,6 +10,13 @@ https://laracasts.com/discuss/channels/laravel/how-to-create-custom-email-verifi
 
 XX - Modules
 	https://nwidart.com/laravel-modules/v6/introduction
+	https://github.com/nWidart/laravel-modules
+	https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-1-13a87f7de06
+	https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-2-c23e8089aeee
+
+	
+
+
 	
 	https://www.diegobrocanelli.com.br/php/laravel-module/?unapproved=625&moderation-hash=b1d103d1b5a6ab80f3dd83a6e9abbfe0#comment-625
 
