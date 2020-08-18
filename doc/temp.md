@@ -57,3 +57,28 @@ https://www.it-swarm.dev/pt/laravel/como-ligar-o-icone-favicon-em-laravel/105023
 
 <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
 
+
+
+5 - Reset de senha
+
+    https://laravel.com/docs/7.x/passwords
+    /password/Reset
+
+6 - Tradução de idioma
+
+    https://appdividend.com/2019/04/01/how-to-create-multilingual-website-using-laravel-localization/
+    https://laravel.com/docs/5.6/localization#retrieving-translation-strings
+
+
+https://albergaria.herokuapp.com/callback_facebook
+
+O nome de usuário @coretectools foi criado para CoretecTools Engenharia.
+Agora ficou mais fácil as pessoas encontrarem sua Página na pesquisa. 
+As pessoas também podem acessar sua Página em fb.me/coretectools e enviar mensagens para ela em m.me/coretectools.
+
+
+https://www.codeply.com/go/wA1MiGPkY4/bootstrap-4-carousel-card-slider
+
+
+_vo - Somente com autenticacao e verificacao de email
+
