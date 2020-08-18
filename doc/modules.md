@@ -83,9 +83,9 @@ Pode ser necessário a inclusão de componentes no layout. É recomendado deixar
 
 XX - Modules
 	
-[https://nwidart.com/laravel-modules/v6/introduction](https://nwidart.com/laravel-modules/v6/introduction)
-[https://github.com/nWidart/laravel-modules](https://github.com/nWidart/laravel-modules)
-[https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-1-13a87f7de06](https://github.com/nWidart/laravel-modules)
-[https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-2-c23e8089aeee](https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-2-c23e8089aeee)
+[https://nwidart.com/laravel-modules/v6/introduction](https://nwidart.com/laravel-modules/v6/introduction)   
+[https://github.com/nWidart/laravel-modules](https://github.com/nWidart/laravel-modules)   
+[https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-1-13a87f7de06](https://github.com/nWidart/laravel-modules)   
+[https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-2-c23e8089aeee](https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-2-c23e8089aeee)   
 
 	
