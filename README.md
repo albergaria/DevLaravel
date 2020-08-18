@@ -13,8 +13,8 @@
 ### Os tópicos foram divididos da seguinte maneira:
 
 * [Desenvolvimento](/doc/Desenvolvedores.md)
-* [Erros](\doc\faq.md)
-* [Implantação](\doc\deploy.md)
-* [Implementação de módulos](\doc\modules.md)  
+* [Erros](/doc/faq.md)
+* [Implantação](/doc/deploy.md)
+* [Implementação de módulos](/doc/modules.md)  
 
 *Estamos sempre em atualização*

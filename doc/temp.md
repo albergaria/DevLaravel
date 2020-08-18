@@ -8,13 +8,6 @@ https://blog.mailtrap.io/laravel-email-verification/
 https://www.youtube.com/watch?v=HCe700GIpz4
 https://laracasts.com/discuss/channels/laravel/how-to-create-custom-email-verification-template-laravel-57
 
-XX - Modules
-	https://nwidart.com/laravel-modules/v6/introduction
-	https://github.com/nWidart/laravel-modules
-	https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-1-13a87f7de06
-	https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-2-c23e8089aeee
-
-	
 
 
 	

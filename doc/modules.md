@@ -51,20 +51,6 @@ Route::get('/mixer', 'MixerController@index');
 /*---------------      End Mixer Routes       ---------*/
 ```
 
-## Views
-Cada um dos módulos terá uma pasta para suas `views` dentro da pasta `views` localizada em `resources`. Abaixo o exemplo das `views` dos módulos Concrete e Mixer.
-```
-├──...
-├──resources
-│  ├──...
-│  └──views
-│  │  ├──...
-|  |  ├──Concrete
-|  |  |  └──index.blade.php
-|  |  └──Mixer
-|  |  |  └──index.blade.php
-```
-
 ## VueJS/Webpackmix
 Alguns dos módulos podem precisar utilizar componentes de [VueJS](https://vuejs.org/) ou armazenar arquivos JavaScript. Logo é necessário uma organização na pasta `js` dentro da pasta `resources`.
 
@@ -95,18 +81,11 @@ mix.js('resources/js/Concrete/flexao.js', 'public/js/Concrete');
 Pode ser necessário a inclusão de componentes no layout. É recomendado deixar um comentário para saber a a origem da inclusão do componente na view de layout.
 
 
-## Classes Auxiliares
-Cada um dos módulos terá uma pasta para suas classes auxiliares na pasta `Helpers` localizada em `app`. Abaixo é mostrado o exemplo do caminho da pasta de `Helpers` do módulo Concrete e Mixer.
+XX - Modules
+	
+[https://nwidart.com/laravel-modules/v6/introduction](https://nwidart.com/laravel-modules/v6/introduction)
+[https://github.com/nWidart/laravel-modules](https://github.com/nWidart/laravel-modules)
+[https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-1-13a87f7de06](https://github.com/nWidart/laravel-modules)
+[https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-2-c23e8089aeee](https://medium.com/@destinyajax/how-to-build-modular-applications-in-laravel-the-plug-n-play-approach-part-2-c23e8089aeee)
 
-```
-.
-├──...
-├──app
-│  ├──...
-│  └──Helpers
-│  │  ├──...
-|  |  ├──Concrete
-|  |  |  └──Cisalhamento.php
-|  |  └──Mixer
-|  |  |  └──ABCP.php
-```
+	
