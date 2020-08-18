@@ -17,4 +17,6 @@
 * [Implantação](/doc/deploy.md)
 * [Implementação de módulos](/doc/modules.md)  
 
+* [Temp](/doc/temp.md)
+
 *Estamos sempre em atualização*
